@@ -9,7 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "15.0.0-rc.0",
+    "babel-plugin-react-compiler": "0.0.0-experimental-ad3b12a-20241011",
+    "next": "^14.2.15",
     "react": "19.0.0-rc-09111202-20241011",
     "react-dom": "19.0.0-rc-09111202-20241011"
   },
