@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     experimental: {
-        reactCompiler: true,
-      },
+        // Remove reactCompiler as it is not supported
+    },
 };
 
 export default nextConfig;
