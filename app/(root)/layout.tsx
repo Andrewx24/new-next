@@ -2,7 +2,7 @@
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
     return (
-      <main className=" bg-orange-200">
+      <main className="">
 
         {children}
       </main>
