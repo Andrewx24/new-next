@@ -2,7 +2,10 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+ <footer>
+
+  <h1> Next JS 15</h1>
+ </footer>
   )
 }
 

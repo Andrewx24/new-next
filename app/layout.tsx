@@ -1,18 +1,9 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { geistMono,geistSans } from "@/lib/fonts";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Header from "@/components/shared/Header";
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import Footer from "@/components/shared/Footer";
 
 export const metadata: Metadata = {
   title: "Next JS 15 APP",
@@ -37,6 +28,7 @@ export default function RootLayout({
           >
             <Header/>
         {children}
+        <Footer/>
         </ThemeProvider>
       </body>
     </html>
