@@ -4,7 +4,11 @@
 
 const Dashboard= () => {
   return (
-    <div>page</div>
+    <main className=" min-h-screen flex ">
+
+    <h1>  Dashboard Page </h1>
+
+    </main>
   )
 }
 

@@ -2,7 +2,7 @@
 
 export default function Page() {
     return (
-        <main>
+        <main className=" min-h-screen flex ">
          About Page
         </main>
     )
