@@ -1,6 +1,13 @@
 // File: lib/global.d.ts
-declare global {
-   let name: string | undefined;
-  }
-  
-  export {};
+
+
+ export interface User{
+   id:string;
+   name:string;
+   age:number;
+   email:string;
+}
+
+
+
+

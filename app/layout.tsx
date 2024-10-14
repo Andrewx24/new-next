@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { geistMono,geistSans } from "@/lib/fonts";
 import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider";
+import { ThemeProvider } from "@/components/shared/theme-provider";
 import Header from "@/components/shared/Header";
 import Footer from "@/components/shared/Footer";
 

@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import roboto from '@/lib/fonts';
-import { ModeToggle } from "@/components/ModeToggle";
+import { ModeToggle } from "@/components/shared/ModeToggle";
 
 const Header = () => {
   return (
