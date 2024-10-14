@@ -1,12 +1,18 @@
-import React from 'react'
-import { User } from '@/lib/global'
+import React from 'react';
+import { User } from '@/lib/global';
 
-
-
-const Userprofile = () => {
-  return (
-    <div>User</div>
-  )
+interface UserProfileProps {
+  user: User;  // Using the User interface for the props
 }
 
-export default Userprofile
+const Userprofile: React.FC<UserProfileProps> = ({ user }) => {  // Destructure 'user' from props
+  return (
+    <div>
+      <h1>{user.name}</h1>
+      <p>Age: {user.age}</p>
+      <p>Email: {user.email}</p>
+    </div>
+  );
+};
+
+export default Userprofile;
