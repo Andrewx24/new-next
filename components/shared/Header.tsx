@@ -1,59 +1,58 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import roboto from '@/lib/fonts';
+import roboto from '@/lib/fonts'
 import { ModeToggle } from "@/components/shared/ModeToggle";
+import GlobalSearchBar from './shared/Searchbar';
+
 
 const Header = () => {
   return (
     <header className="flex flex-col md:flex-row items-center justify-between px-5 py-3 bg-gray-100 dark:bg-gray-900">
       <div className="flex items-center mb-2 md:mb-0">
-        <Link href="/">
+        <Link href="/" className="flex items-center">
           <Image src="/logo.png" alt="Next JS Project Logo" width={50} height={50} className="w-8 h-8 md:w-12 md:h-12" />
+          <h1 className={`${roboto.className} ml-2 text-lg md:text-xl font-bold`}>
+            Next JS Project
+          </h1>
         </Link>
-        <h1 className={`${roboto.className} ml-2 text-lg md:text-xl font-bold`}>
-          Next JS Project
-        </h1>
       </div>
-     
-      <nav>
-        <ul className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4">
+      <GlobalSearchBar />
+      <nav className="mt-4 md:mt-0">
+        <ul className="flex flex-wrap justify-center md:justify-end gap-2">
           <li>
-            <Link className="btn1 text-sm md:text-base hover:underline" href="/">
+            <Link href="/" className="btn1 text-sm md:text-base hover:underline">
               Home
             </Link>
           </li>
           <li>
-            <Link className="btn1 text-sm md:text-base hover:underline" href="/about">
+            <Link href="/about" className="btn1 text-sm md:text-base hover:underline">
               About
             </Link>
           </li>
           <li>
-            <Link className="btn1 text-sm md:text-base hover:underline" href="/aichat">
+            <Link href="/aichat" className="btn1 text-sm md:text-base hover:underline">
               AI CHATBOT
             </Link>
           </li>
           <li>
-            <Link className="btn3 text-sm md:text-base hover:underline" href="/dashboard">
+            <Link href="/dashboard" className="btn3 text-sm md:text-base hover:underline">
               Dashboard
             </Link>
           </li>
           <li>
-            <Link className="btn2 text-sm md:text-base hover:underline" href="/signin">
+            <Link href="/signin" className="btn2 text-sm md:text-base hover:underline">
               Sign In
             </Link>
-
           </li>
           <li>
-            <Link className="btn2 text-sm md:text-base hover:underline" href="/signup">
+            <Link href="/signup" className="btn2 text-sm md:text-base hover:underline">
               Sign Up
             </Link>
           </li>
-        
-             </ul>
+        </ul>
       </nav>
-
-      <div className="mt-2 md:mt-0">
+      <div className="mt-4 md:mt-0 md:ml-4">
         <ModeToggle />
       </div>
     </header>
