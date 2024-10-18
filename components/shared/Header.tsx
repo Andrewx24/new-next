@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import  roboto  from '@/lib/fonts';
 import { ModeToggle } from "@/components/shared/ModeToggle";
-import GlobalSearchBar from './shared/Searchbar';
+import GlobalSearchBar from './search/Searchbar';
 
 const Header = () => {
   return (
